@@ -62,8 +62,6 @@ for entry in blocks:
     street_block = entry["Street Block"]
     zipcode = entry["Zip Code"]
 
-    # print(json.dumps(entry, indent=4))
-    # print('\n'*3)
     entry["_key"] = f"{street_block}-{zipcode}"
 
     lookup = f"{street_block}, {zipcode}"
